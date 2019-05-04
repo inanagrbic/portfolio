@@ -1,0 +1,104 @@
+extends layout
+block content
+    // header section
+    header.main-img
+      .container-fluid
+        .row
+          .col-sm-12.header-title.justify-content-center.align-items-center
+            img(src='images/ivana-logo.svg', alt='logo')
+          .col-sm-12.header-desc.justify-content-center.align-items-center
+            h4 UI/UX Designer
+          .col-sm-12.header-text.justify-content-center.align-items-center
+            h5 DESIGNER. THINKER. MAKER.
+          .col-sm-12.header-text.justify-content-center.align-items-center
+            p
+              | I’m a graphic and web designer who loves creating clean and impressive interfaces
+    // header section end
+    // body section start
+    .main-container
+      // section 1 start
+      .section-1
+        .container
+          h3
+            span MY PROJECTS
+          .portfolio-container
+            a(href='/client-1')
+              .portfolio-box.box-1
+                .overlay-box
+                  p 
+                    | TRAVEL AGENCY 
+                    br      
+                    | WEBSITE CONCEPT
+            a(href='/client-2')
+              .portfolio-box.box-2
+                .overlay-box
+                  p 
+                    | VIDEO MARKETING
+                    br
+                    | CAMPAING
+            a(href='/client-3')
+              .portfolio-box.box-3
+                .overlay-box
+                  p 
+                    | TV SHOW
+                    br
+                    | WEBSITE DESIGN
+            a(href='/client-4')
+              .portfolio-box.box-4
+                .overlay-box
+                  p 
+                    | BANKING SERVICES
+                    br
+                    | LANDING PAGE
+            a(href='/client-5')
+              .portfolio-box.box-5
+                .overlay-box
+                  p 
+                    | FASHION & BUSINESS MODEL
+                    br
+                    | BRAND GUIDELINES
+            a(href='/client-6')
+              .portfolio-box.box-6
+                .overlay-box
+                  p 
+                    | FOOD AND RECIPES
+                    br
+                    | INSPIRATION WEBSITE
+      // section 1 end
+      // section 2 start
+      .section-2
+        .container
+          h3 ABOUT
+          .row
+            .col-sm-12.portfolio-info
+              span
+                p
+                  | WHAT I DO: 
+                  span.small-text
+                    | I love designing contemporary, clean and user-centred interfaces for websites and mobile.
+            .col-sm-12.portfolio-info
+              span
+                p
+                  | EDUCATION: 
+                  span.small-text I have stuided Graphic Design on Faculty of Fine Arts-Skopje (2004-2008).
+            .col-sm-12.portfolio-info
+              span
+                p
+                  | SKILLS: 
+                  span.small-text Illustrator, Photoshop, Indesign, Adobe XD, UI/UX Design are my best friends.
+      // section 2 end
+    footer
+      .container
+        .footer-text
+          h3 SAY HELLO
+          .footer-info
+            p(style='font-size:34px;') Don't be shy.
+            p(style='font-size:34px;') Have a new project or just say hi?
+        .footer-icons
+          a(href='mailto:inana.grbic@gmail.com')
+            img.mail-img(src='images/mail_icon.svg', alt='mail')
+            | inana.grbic@gmail.com
+          a(href='https://linkedin.com/in/ivana-grbic-b8773b183')
+            img.mail-img(src='images/linkedin_icon.svg', alt='linkedin')
+            | linkedin.com/in/ivana-grbic-b8773b183
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

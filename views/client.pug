@@ -1,0 +1,30 @@
+extends layout
+block content
+    // header section
+    header.main-img.client-header
+      .container-fluid
+        .row
+          .col-sm-12.header-title.justify-content-center.align-items-center
+            a(href='/')
+              img(src='images/ivana-logo.svg', alt='logo')
+    .container-fluid(style='position:relative;')
+      img.img-fluid(src=path, alt='client')
+      .buttons
+        a.button.left(class='color-'+id)(href='/') Back
+        if next < 7  
+            a.button.right(class='color-'+id)(href='client-'+next) Next
+    footer
+      .container
+        .footer-text
+          h3 SAY HELLO
+          .footer-info
+            p(style='font-size:34px;') Don't be shy.
+            p(style='font-size:34px;') Have a new project or just say hi?
+        .footer-icons
+          a(href='mailto:inana.grbic@gmail.com')
+            img.mail-img(src='images/mail_icon.svg', alt='mail')
+            | inana.grbic@gmail.com
+          a(href='https://linkedin.com/in/ivana-grbic-b8773b183')
+            img.mail-img(src='images/linkedin_icon.svg', alt='linkedin')
+            | linkedin.com/in/ivana-grbic-b8773b183
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
