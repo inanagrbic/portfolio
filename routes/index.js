@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 /* GET home page. */
 router.get('/client-:id', function(req, res, next) {
   var id = req.params.id;
-  if (id > 6) {
+  if (id > 9) {
     res.status(404);
     res.sendFile('404.html', {root : __dirname + '/views'});
   } else {

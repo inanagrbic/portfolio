@@ -10,9 +10,9 @@ block content
     .container-fluid(style='position:relative;')
       img.img-fluid(src=path, alt='client')
       .buttons
-        a.button.left(class='color-'+id)(href='/') Back
-        if next < 7  
-            a.button.right(class='color-'+id)(href='client-'+next) Next
+        a.button.left(class='btn btn-outline-dark color-'+id)(href='/') Back
+        if next < 10  
+            a.button.right(class='btn btn-dark color-'+id)(href='client-'+next) Next
     footer
       .container
         .footer-text
